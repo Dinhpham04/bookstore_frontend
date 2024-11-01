@@ -1,0 +1,73 @@
+.login-background {
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+
+    .login-container {
+        width: 400px;
+        height: 500px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+
+        .login-content {
+            padding: 16px;
+
+            .text-login {
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+                padding: 16px;
+            }
+
+            .login-input {
+                margin-bottom: 10px;
+
+                .custom-input-password {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 0;
+                        top: 30%;
+                        left: calc(100% - 30px);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+                color: #eee;
+                margin-bottom: 6px;
+                outline: none;
+                background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            }
+
+            .forgot-password {
+                font-size: 12px;
+            }
+
+            .social-login {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+
+                i {
+                    font-size: 36px;
+                    margin: 20px;
+                }
+
+                .google-icon {
+                    color: #dd4b39;
+                }
+
+                .facebook-icon {
+                    color: #3b5998;
+                }
+            }
+        }
+    }
+}

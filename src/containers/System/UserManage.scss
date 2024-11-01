@@ -1,0 +1,76 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.btn-delete {
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(235, 15, 15);
+
+    &:hover {
+        background-color: transparent !important;
+        color: rgb(181, 60, 60) !important;
+    }
+}
+
+.btn-edit {
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(243, 137, 8);
+
+    &:hover {
+        background-color: transparent !important;
+        color: rgb(239, 186, 13) !important;
+    }
+}
+
+.modal-user-container {
+    .modal-header {
+        .close {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 24px;
+        }
+    }
+
+    .modal-user-body {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 48%;
+
+            input {
+                border-radius: 2px;
+                border: 1px solid gray;
+                height: 30px;
+                outline: none;
+                padding: 10px;
+            }
+
+
+        }
+    }
+}
